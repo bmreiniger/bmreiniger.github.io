@@ -15,5 +15,11 @@ Chicago, IL
 <b>Office phone:</b> 312-567-8915
 </p>
 
+<ul>
+{% for post in site.posts %}
+   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+
 </body>
 </html>

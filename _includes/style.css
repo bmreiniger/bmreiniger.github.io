@@ -1,0 +1,162 @@
+a {
+    color: blue;
+}
+a:hover, a:active {
+    background-color: rgb(100,255,255);
+}
+a.imagelink:hover {
+    background-color: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    margin-bottom: 1ex;
+}
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+}
+ol {
+    margin-top: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+ul ul {
+    margin: 0 0 0 2ex;
+}
+
+#navmaincontainer {
+    display: table-cell;
+    width: 100%;
+    background-color: rgb(255,235,200);
+}
+#navbar {
+    display: table-cell;
+    position: relative;
+    width: 140px;
+    background-color: rgb(0,60,125);
+    font-size: large;
+}
+#main {
+    display: table-cell;
+    max-width: 65em;
+    padding: 0 6pt;
+}
+#right {
+    display: table-cell;
+    padding: 8pt 8pt;
+    min-width: 3em;
+    background-color: rgb(0,60,125);
+    color: white;
+    text-align: center;
+}
+#footer {
+    display: table-row;
+    font-size: small;
+}
+
+
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar a {
+    display: block;
+    color: white;
+    background-color: rgb(0,60,125);
+    width: 100px;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+}
+#navbar a:hover, #navbar a:active {
+    background-color: rgb(0,20,80);
+}
+#navbar ul ul {
+    text-indent: 20px;
+    font-size: small;
+    color: white;
+}
+
+
+
+#main p.lastupdate {
+    font-size: small;
+    text-align: center;
+}
+
+
+
+#right img {
+    vertical-align: top;
+}
+#right p {
+    margin-top: 0;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    #navmaincontainer {
+        display: block;
+    }
+    #right {
+        display: inline-block;
+        float: right;
+    }
+    #footer {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #navmaincontainer {
+        float: left;
+    }
+    #navbar {
+        float: left;
+        padding: 0px;
+        height: 4em;
+        width: 100%;
+    }
+    #main {
+        float: left;
+        width: auto;
+    }
+    #right {
+        display: inline-block;
+        width: 100%;
+    }
+    #navbar ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 4em;
+    }
+    #navbar ul ul {
+        top: auto;
+        position: relative;
+    }
+    #navbar li {
+        padding: 0px;
+        margin: 0;
+    }
+    #navbar a {
+        width: 100%;
+        padding: 10px 0;
+    }
+    #navbar:hover ul, #navbar:active ul, #navbar:focus ul {
+        display: block;
+    }
+}
+
+
+
+
+

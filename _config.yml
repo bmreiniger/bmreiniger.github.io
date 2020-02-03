@@ -36,6 +36,11 @@ paginate: 20
 paginate_path: "/blog/page:num/"
 plugins: [jekyll-paginate]
 
+header_pages:
+  - index.html
+  - aboutme.html
+  - blog/index.html
+  - links.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
